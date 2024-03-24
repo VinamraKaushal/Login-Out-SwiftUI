@@ -73,35 +73,6 @@ struct LoginView: View {
         })
         .padding(.top)
             .padding(.bottom)
-        ZStack {
-            Divider()
-                .background(.gray)
-                .padding(.horizontal, 26)
-            Text("or sign in with")
-                .font(.caption2)
-                .foregroundStyle(.gray)
-                .background(Color("orsigninwith"))
-        }.padding(.top)
-            .padding(.bottom)
-        ZStack {
-            Button(action: {
-                print("Continue with Google")
-            }, label: {
-                Text("Continue with Google")
-                    .font(.title3)
-                    .foregroundStyle(.gray)
-                    .frame(width: 340, height: 50)
-                    .background(Color(uiColor: .systemGray5))
-                    .clipShape(.capsule)
-                    .padding(.horizontal, 26)
-            })
-            Image("google")
-                .resizable()
-                .frame(width: 40, height: 40, alignment: .leading)
-                .padding(.trailing, 250)
-        }
-        .padding(.top)
-            .padding(.bottom)
         Spacer()
         HStack(spacing: -10) {
             Text("Don't have an account?")

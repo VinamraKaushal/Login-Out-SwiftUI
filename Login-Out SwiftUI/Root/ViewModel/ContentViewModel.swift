@@ -5,7 +5,7 @@
 //  Created by Vinamra Kaushal on 05/03/24.
 //
 
-import FirebaseAuth
+import Firebase
 import Combine
 
 class ContentViewModel: ObservableObject {
